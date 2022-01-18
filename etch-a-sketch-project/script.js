@@ -11,12 +11,19 @@ setGrid(currentSize);
 
 function setGrid(size) {
     for (let i = 0; i < size; i++) {
+        const row = document.createElement("div");
+        row.id = "row";
+        row.style.justifyContent = "center";
+        row.style.alignItems = "center";
         for (let j = 0; j < size; j++) {
             const div = document.createElement("div");
             div.addEventListener('mouseover', updateColor);
             div.style.border = "solid black 2px";
-            grid.appendChild(div);
+            div.style.width = "50px";
+            div.style.height = "50px";
+            row.appendChild(div);
         }
+        grid.appendChild(row);
     }
 }
 
