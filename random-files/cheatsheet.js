@@ -133,7 +133,7 @@ div.classList.toggle('new'); // if "new" exists, remove. if not, add.
 // Text
 div.textContent = 'Hello World';
 // HTML
-div.innerHTML = '<span>Hello World</span>'; // potentially dangerous to injection
+div.innerHTML = '<span>Hello World</span>'; // potentially dangerous to injection, use textContent
 // Events (list of events: https://www.w3schools.com/jsref/dom_obj_event.asp)
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
