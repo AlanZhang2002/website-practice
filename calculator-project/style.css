@@ -1,23 +1,72 @@
 body {
-
+    text-align: left;
+    font: 18px 'Roboto', 'sans-serif';
 }
 
 .calculator {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0060cf;
+    width: 268px;
+    height: 304px;
 }
 
 .display {
-
+    text-align: right;
+    height: 48px;
+    width: 200px;
+    font: 48px 'Calculator Display', 'sans-serif';
+    border: 3px solid black;
+    padding-right: 4px;
+    margin-top: 20px;
+    background-color: #AAAAAA;
 }
 
 .buttons {
-
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    height: 200px;
+    padding: 0px;
+    margin: 20px 0px;
 }
 
-.buttons.main {
-
+.buttons .main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 168px;
+    padding: 0px;
 }
 
-.buttons.main button{
+.buttons .operators {
+    display: flex;
+    flex-wrap: wrap;
+    width: 56px;
+    padding: 0px;
+}
 
+button {
+    height: 40px;
+    width: 56px;
+    padding: 0px;
+    margin: 0px;
+    font: bold 24px 'Roboto', 'sans-serif';
+    border-color: #0060cf;
+}
+
+button.operator {
+    color: white;
+    background-color: red;
+}
+
+button.number {
+    color: black;
+    background-color: whitesmoke;
+}
+
+@font-face {
+    font-family: 'Calculator Display';
+    src: url('./digital-7 (mono).ttf') format('truetype');
 }
